@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سحابتي - تخزين ومشاركة الملفات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-cloud"></i>
+                <h1>سحابتي</h1>
+            </div>
+            <nav>
+                <a href="#" class="active"><i class="fas fa-folder"></i> ملفاتي</a>
+                <a href="#"><i class="fas fa-users"></i> مشاركة معي</a>
+                <a href="#"><i class="fas fa-star"></i> المميزة</a>
+                <a href="#"><i class="fas fa-trash-alt"></i> المهملات</a>
+                <div class="upgrade-box">
+                    <p>المساحة المتوفرة:</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 40%;"></div>
+                    </div>
+                    <p class="storage-info">40GB مستخدمة من 100GB</p>
+                    <button>ترقية الباقة</button>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="البحث في الملفات والمجلدات...">
+                </div>
+                <div class="user-profile">
+                    <button class="upload-btn"><i class="fas fa-upload"></i> رفع ملف</button>
+                    <img src="https://via.placeholder.com/40" alt="صورة المستخدم" class="user-avatar">
+                </div>
+            </header>
+
+            <section class="file-browser">
+                <h2>📁 ملفاتي الأخيرة</h2>
+                
+                <div id="drop-zone" class="drop-zone">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>اسحب وأفلت الملفات هنا للرفع</p>
+                </div>
+
+                <div class="file-list-header">
+                    <span>الاسم</span>
+                    <span>تاريخ التعديل</span>
+                    <span>الحجم</span>
+                    <span>المشاركة</span>
+                </div>
+                <ul id="file-list" class="file-list">
+                    <li class="file-item folder">
+                        <i class="fas fa-folder"></i>
+                        <span class="file-name">مشاريع 2024</span>
+                        <span>منذ يومين</span>
+                        <span>-</span>
+                        <span>مشارَك</span>
+                    </li>
+                    <li class="file-item document">
+                        <i class="fas fa-file-word"></i>
+                        <span class="file-name">مخطط العمل.docx</span>
+                        <span>منذ 3 ساعات</span>
+                        <span>2.5 MB</span>
+                        <span>خاص</span>
+                    </li>
+                    <li class="file-item image">
+                        <i class="fas fa-image"></i>
+                        <span class="file-name">صورة العرض.jpg</span>
+                        <span>منذ 15 دقيقة</span>
+                        <span>4.1 MB</span>
+                        <span>مشارَك</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
